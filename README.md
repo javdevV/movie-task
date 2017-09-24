@@ -1,5 +1,7 @@
 # movie-task
 A back-end application.
+MongoDB database is required !
+
 ## Installation
 
 OS X & Linux:
@@ -14,5 +16,4 @@ npm install
 ```
 ## Testing 
 ```sh
-ng serve
-```
+node bin/www```
