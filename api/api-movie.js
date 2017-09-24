@@ -19,5 +19,13 @@ router.post('/',function(req,res){
 		res.json(movie);
 	})
 })
+router.get('/search/:title',function (req,res) {
+	Movie.find({"title":req.params.title},{title:1,director:1},function(err,mov){
+		if (err) 
+			res.json(err);
+		res.json(mov);
+	})
+	
+})
 
 module.exports=router;
